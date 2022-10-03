@@ -92,6 +92,9 @@ class Feature{
   void unset_feature();
 };
 
-
+__global__ void fire_kernel(Feature *data, int n);
+__global__ void neuron_utility_update_kernel(Feature *data, int n);
+__global__ void update_value_kernel(Feature *data, int n);
+__global__ void set_feature_kernel(Feature *data, int n);
 
 #endif //_CUDA_HEADER_FILE_H_
